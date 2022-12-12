@@ -30,7 +30,7 @@ const App = () => {
 
       setData(result);
     } catch (err) {
-      setErr(err.message);
+     // setErr(err.message);
     } finally {
       setIsLoading(false);
     }
