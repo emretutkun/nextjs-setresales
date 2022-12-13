@@ -87,6 +87,9 @@ const App = () => {
                   <p className={styles.p}>{person.itemCode}</p>
                 </div>
                 <div className={styles.gösterana}>
+                  <p className={styles.p}>{person.satis}</p>
+                </div>
+                <div className={styles.gösterana}>
                   <p className={styles.p}>{person.kalan}</p>
                 </div>
               </div>
