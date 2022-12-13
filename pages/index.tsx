@@ -60,7 +60,7 @@ const App = () => {
           <img src="/Loading.gif" className={styles.loadingtext} alt="" />
         )}
         {data &&
-          data.map((person) => {
+          data.map((person: any) => {
             return (
               person.colorDescription == data[0].colorDescription && (
                 <img src={person.photo} className={styles.image} alt="" />
