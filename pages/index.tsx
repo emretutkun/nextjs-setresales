@@ -77,7 +77,7 @@ const App = () => {
         <div className={styles.gösterbas}>Kalan</div>
 
         {data &&
-          data.map((person) => {
+          data.map((person: any) => {
             return (
               <div key={person.colorDescription}>
                 <div className={styles.gösterana}>
