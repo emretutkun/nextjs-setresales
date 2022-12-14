@@ -75,6 +75,7 @@ const App = () => {
         <div className={styles.gösterbas}>Üretim</div>
         <div className={styles.gösterbas}>Satış</div>
         <div className={styles.gösterbas}>Kalan</div>
+        <div className={styles.gösterbas}>Yüzde</div>
 
         {data &&
           data.map((person: any) => {
@@ -91,6 +92,9 @@ const App = () => {
                 </div>
                 <div className={styles.gösterana}>
                   <p className={styles.p}>{person.kalan}</p>
+                </div>
+                <div className={styles.gösterana}>
+                  <p className={styles.p}>{person.itemDescription}</p>
                 </div>
               </div>
             );
