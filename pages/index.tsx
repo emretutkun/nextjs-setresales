@@ -56,9 +56,9 @@ const App = () => {
         </div>
         <br></br>
 
-        {isLoading && (
+        {isLoading && 
           <img src="/Loading.gif" className={styles.loadingtext} alt="" />
-        )}
+        }
         {data &&
           data.map((person: any) => {
             return (

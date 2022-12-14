@@ -24,6 +24,12 @@
 
 }
 
+.loadingtext {
+ 
+  width: 150px;
+  height: 150px;
+  background: url("/Loading.gif") center center;
+}
 .debene{
    margin-top: 10px; margin-bottom: 10px; margin-left: 0px; margin-right: 0px; height:auto; background:red;}
    .gösterbas{
