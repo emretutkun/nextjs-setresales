@@ -54,11 +54,11 @@ const App = () => {
             ARA
           </button>
         </div>
-        <br></br>
+        
 
         {isLoading && 
-          <img src="/Loading.gif" className={styles.loadingtext} alt="" />
-        }
+          <img src="/Loading.gif" className={styles.limage} alt="" />
+        }<br></br>
         {data &&
           data.map((person: any) => {
             return (

@@ -38,7 +38,7 @@
     color: white;
     width: 25%;
     height: 30px;
-    background: rgb(134, 170, 238);
+    background: rgb(243, 146, 36);
     border-radius:1px;
     border-color: red;
     font-weight: bold;
@@ -107,7 +107,7 @@ margin-bottom:10px;
   margin-left: 200px;
 }
 .input[type=text] {
-  border: 3px solid red;
+  border: 3px solid rgb(255, 143, 52);
   background-color: white;
   color:gray;
   font-size: 15px;
@@ -124,6 +124,20 @@ margin-bottom:10px;
   justify-content: center;
   align-items: center;
 }
+.limage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 2rem 0;
+  width:35px;
+  height:15px;
+  padding: 0.5rem 0;
+  border-radius: 50px;
+
+  box-shadow:  0px 5px 25px #2805eb;
+
+}
 .image{
   display: flex;
   justify-content: center;
@@ -134,7 +148,7 @@ margin-bottom:10px;
   height:350px;
   padding: 0.5rem 0;
 
-  box-shadow:  0px 5px 15px #251e1e;
+  box-shadow:  0px 5px 15px #382305;
 
 }
 
