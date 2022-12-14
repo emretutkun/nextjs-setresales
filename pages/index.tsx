@@ -3,6 +3,7 @@ import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import axios from "axios";
 import React from "react";
+import Head from "next/head";
 const App = () => {
   const [data, setData] = useState<any>();
   const [isLoading, setIsLoading] = useState(false);
@@ -32,7 +33,12 @@ const App = () => {
   console.log(data);
   var photo;
   return (
+    
     <div>
+        <Head>
+        <title>Setre Satış Kalan</title>
+        <meta property="og:title" content="My page title" key="title" />
+        </Head>
       {err && <h2>{err}</h2>}
       <div className={styles.main}>
         <img className={styles.logon} src="/logonw.jpg" alt="/logo.jpg" />
