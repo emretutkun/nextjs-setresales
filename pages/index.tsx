@@ -37,8 +37,8 @@ const App = () => {
     <div>
         <Head>
         <title>Setre Satış Kalan</title>
-        <meta property="og:title" content="My page title" key="title" />
-        <meta name="Setre Satış Kalan"/>
+        <meta name="Setre Satış Kalan" property="og:title" content="My page title" key="title" />
+        
         </Head>
       {err && <h2>{err}</h2>}
       <div className={styles.main}>
