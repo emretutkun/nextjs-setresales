@@ -1,13 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 import axios from "axios";
 import React from "react";
 import Head from "next/head";
 import Link from 'next/link'
-
-  
-
 const App = () => {
   const [data, setData] = useState<any>();
   const [isLoading, setIsLoading] = useState(false);
@@ -55,7 +51,7 @@ const App = () => {
           <input
             className={styles.input}
             id="name"
-            placeholder="bknz:el0521 "
+            placeholder="bknz:el0521"
             name="name"
             type="text"
             onChange={(event) => setTitle(event.target.value)}
