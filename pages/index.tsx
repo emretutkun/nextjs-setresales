@@ -82,9 +82,10 @@ const App = () => {
                 <div>
                 <div className={styles.iki}><img src={person.photo} className={styles.image} alt="" />  </div>
    
-                <div className={styles.dataloader}>
+                <div className={styles.dataloader}>         
                 <div className={styles.üc}><a className={styles.bas}>MALİYET : </a>{person.maliyet}$</div>
                 <div className={styles.bir}><a className={styles.bas}>MN(USD) : </a>{person.psf}$</div>
+                <div className={styles.üc}><a className={styles.bas}>Üretim Tarihi : </a>{person.itemTime}$</div>
                 </div>
                 </div>
               )
