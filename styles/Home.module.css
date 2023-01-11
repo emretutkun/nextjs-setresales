@@ -92,6 +92,11 @@ width: 30%;
   height: 100%; 
  }
  .iki{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: rgb(238, 114, 31);
   height: 100%;  
  }
  .üc{

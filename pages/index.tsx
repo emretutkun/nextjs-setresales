@@ -85,8 +85,9 @@ const App = () => {
                 <div className={styles.dataloader}>         
                 <div className={styles.üc}><a className={styles.bas}>MALİYET : </a>{person.maliyet}$</div>
                 <div className={styles.bir}><a className={styles.bas}>MN(USD) : </a>{person.psf}$</div>
-                <div className={styles.üc}><a className={styles.bas}>Üretim Tarihi : </a>{person.itemTime}$</div>
                 </div>
+                <br></br>
+                <div className={styles.iki}><a className={styles.bas}>Üretim Tarihi : </a>{person.itemTime}</div>
                 </div>
               )
             );
