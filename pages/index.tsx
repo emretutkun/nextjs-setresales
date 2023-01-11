@@ -17,6 +17,7 @@ const App = () => {
 
   var name;
   const submitContact = async (event: any) => {
+    if (event.key === 'Enter') {
     event.preventDefault();
     setIsLoading(true);
     try {
@@ -32,10 +33,34 @@ const App = () => {
     } finally {
       setIsLoading(false);
     }
-  };
+  }
+ 
+  ;
   console.log(data);
-  var photo;
+}
+const submitContact1 = async (event: any) => {
 
+  event.preventDefault();
+  setIsLoading(true);
+  try {
+    const response = await axios.get(
+      `https://api.setre.com/api/SalesRemainingReport?STCode=${title}`
+    );
+    const cosmetics = response.data;
+    const result = await response.data;
+    console.log("result is: ", JSON.stringify(result, null, 4));
+    setData(result);
+  } catch (err) {
+    // alert(err.message);
+  } finally {
+    setIsLoading(false);
+  }
+
+
+;
+console.log(data);
+}
+  var photo;
 
 
 
@@ -59,18 +84,24 @@ const App = () => {
             placeholder="bknz:el0521 "
             name="name"
             type="text"
-      
+            // onKeyDown={submitContact}
+            // onChange={handleChange}
+            // onKeyDown={handleKeyDown}
             onChange={(event) => setTitle(event.target.value)}
+            onKeyUp={submitContact}
+            onKeyDown={submitContact}
+
             required
           />
           
           <button
             className={styles.button}
             placeholder="bknz:el0521"
-            onClick={submitContact}
+            onClick={submitContact1}
           >
             ARA
           </button>
+          
         </div>
         
 
