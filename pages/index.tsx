@@ -46,7 +46,8 @@ const App = () => {
         <Head>
         <title>Setre Satış Kalan</title>
         <meta name="Setre Satış Kalan" property="og:title" content="My page title" key="title" />
-
+        <meta name="viewport" content=
+            "width=device-width, user-scalable=no" />
         </Head>
       {err && <h2>{err}</h2>}
       <div className={styles.main}>
@@ -58,6 +59,7 @@ const App = () => {
             placeholder="bknz:el0521 "
             name="name"
             type="text"
+            sc
             onChange={(event) => setTitle(event.target.value)}
             required
           />
