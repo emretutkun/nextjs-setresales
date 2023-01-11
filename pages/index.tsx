@@ -59,7 +59,7 @@ const App = () => {
             placeholder="bknz:el0521 "
             name="name"
             type="text"
-            sc
+      
             onChange={(event) => setTitle(event.target.value)}
             required
           />
