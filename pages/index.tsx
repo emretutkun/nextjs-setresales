@@ -16,6 +16,9 @@ const App = () => {
   const [ItemCode, setItemCode] = useState("");
 
   var name;
+
+
+
   const submitContact = async (event: any) => {
     if (event.key === 'Enter') {
     event.preventDefault();
@@ -38,6 +41,7 @@ const App = () => {
   ;
   console.log(data);
 }
+
 const submitContact1 = async (event: any) => {
 
   event.preventDefault();
@@ -101,20 +105,23 @@ console.log(data);
           >
             ARA
           </button>
-          
-        </div>
-        
+          </div>
 
+        </div>       
+      
         {isLoading && 
           <img src="/Loading.gif" className={styles.limage} alt="" />
         }<br></br>
          {data &&
           data.map((person: any) => {
             return (
-              person.colorDescription == data[0].colorDescription && (
+              // person.colorDescription == data[0].colorDescription && (
+                <div key={person.colorDescription}>
+
                 <div>
-                <div className={styles.iki}><img src={person.photo} className={styles.image} alt="" />  </div>
-   
+                   <div className={styles.main}>
+                <a href={person.photo}><div className={styles.iki}><img src={person.photo} className={styles.image} alt="" />  </div></a>
+
                 <div className={styles.dataloader}>         
                 <div className={styles.üc}><a className={styles.bas}>MALİYET : </a>{person.maliyet}$</div>
                 <div className={styles.bir}><a className={styles.bas}>MN(USD) : </a>{person.psf}$</div>
@@ -122,29 +129,19 @@ console.log(data);
                 <br></br>
                 <div className={styles.iki}><a className={styles.bas}>Üretim Tarihi : </a>{person.itemTime}</div>
                 </div>
-              )
-            );
-          })} 
-                          
-
-          
-        
-      </div>
-
-      <div className={styles.debene}>
+                <div className={styles.debene}>
         <div className={styles.gösterbas}>Renk</div>
         <div className={styles.gösterbas}>Üretim</div>
         <div className={styles.gösterbas}>Satış</div>
         <div className={styles.gösterbas}>Kalan</div>
         <div className={styles.gösterbas}>Yüzde</div>
-
-        {data &&
-          data.map((person: any) => {
-            return (
-              <div key={person.colorDescription}>
+        </div>
                 <div className={styles.gösterana}>
-                  <p className={styles.p}>{person.colorDescription}</p>
+                  
+                  <div>{person.colorDescription}</div>
+
                 </div>
+                
                 <div className={styles.gösterana}>
                   <p className={styles.p}>{person.itemCode}</p>
                 </div>
@@ -157,11 +154,18 @@ console.log(data);
                 <div className={styles.gösterana}>
                   <p className={styles.p}>{person.itemDescription}</p>
                 </div>
-              </div>
+              </div>        <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+
+                </div>
+                
             );
-          })}
-      </div>
-    </div>
+          })} 
+                    </div>            
+
+   
   );
 };
 
